@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+
+<html>
+<head>
+	<title>DigitRecogWeb | Predict</title>
+</head>
+<body>
+	<h1>Here's the received data!</h1>
+	<p><img src="{% static "file.png" %}" alt="FileBuffer"></p>
+	<a class="btn btn-primary" href="{% url 'draw' %}">LET'S DO IT AGAIN!</a>
+
+</body>
+</html>

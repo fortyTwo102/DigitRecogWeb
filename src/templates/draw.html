@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>
+		Draw | DigitRecogWeb	
+	</title>
+</head>
+<link rel="stylesheet" href="{% static "style.css" %}" />
+<body>
+	<h1>DRAW HERE!</h1> {{ data }}
+	<canvas id='canvas'></canvas>
+	<a class="btn btn-primary" href="{% url 'draw' %}">RESET</a>
+	<a class="btn btn-primary" href="{% url 'predict' %}">PREDICT</a>
+	<script src="{% static "canvas.js" %}"></script>
+
+</body>
+</html>
